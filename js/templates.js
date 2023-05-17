@@ -16,11 +16,21 @@ const retornoCardHTML = (producto) => {
  
 }
  
- const retornoFilaCheckoutHTML = (producto) => {
-     return ` <tr>
-                 <td>${producto.imagen}</td>
-                 <td>${producto.nombre}</td>
-                 <td>${producto.precio}</td>
-                 <td><button id="${producto.id}" class="button-outline">X</button></td>
-             </tr>`
- }
+const retornoFilaCheckoutHTML = (producto) => {
+    return `
+      <tr>
+        <td>${producto.imagen}</td>
+        <td>${producto.nombre}</td>
+        <td>${producto.precio}</td>
+        <td>
+          <button data-codigo="${producto.codigo}" class="button-quitar">X</button>
+        </td>
+      </tr>
+    `;
+  };
+  
+  
+  
+  
+  
+  

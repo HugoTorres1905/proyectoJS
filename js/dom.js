@@ -1,38 +1,44 @@
+const container = document.querySelector("div#container");
+const productos = [];
+const URL = 'js/productos.json';
 
-const container = document.querySelector("div#container")
-const productos = []
-const URL = 'js/productos.json'
-
-const obtenerProductos = ()=> {
+const obtenerProductos = () => {
     fetch(URL)
-        .then((response)=> response.json() )
-        .then((data)=> productos.push(...data) )
-        .then(()=> cargarProductos(productos) )
+        .then(response => response.json())
+        .then(data => {
+            productos.push(...data);
+            cargarProductos(productos);
+        })
         .catch(error => {
-            console.error(error)
-            container.innerHTML = retornoCardError()
-        })
-}
+            console.error(error);
+            container.innerHTML = retornoCardError();
+        });
+};
 
-const cargarProductos = (array)=> {
+const cargarProductos = (array) => {
     array.forEach(producto => {
-        container.innerHTML += retornoCardHTML(producto)
-    })
-    activarClickEnBotones()
-}
+        container.innerHTML += retornoCardHTML(producto);
+    });
+    activarClickEnBotones();
+};
 
-const activarClickEnBotones = ()=> {
-    const btnComprar = document.querySelectorAll("button.button.button-outline.button-add")
+function activarClickEnBotones() {
+    const btnComprar = document.querySelectorAll("button.button.button-outline.button-add");
     for (boton of btnComprar) {
-        boton.addEventListener("click", (event)=> {
-            let resultado = productos.find(producto => producto.id === parseInt(event.target.id))
-                carrito.push(resultado)
-                guardarCarrito()
-                console.table(carrito)
-                 
-        })
+      boton.addEventListener("click", (event) => {
+        const productoSeleccionado = productos.find(producto => producto.id === parseInt(event.target.id));
+        const productoExistente = carrito.find(item => item.id === productoSeleccionado.id);
+        if (productoExistente) {
+          productoExistente.cantidad++;
+        } else {
+          productoSeleccionado.cantidad = 1;
+          carrito.push(productoSeleccionado);
+        }
+        guardarCarrito();
+        console.table(carrito);
+      });
     }
-}
+  }
 
-obtenerProductos()
-recuperarCarrito()
+obtenerProductos();
+recuperarCarrito();
