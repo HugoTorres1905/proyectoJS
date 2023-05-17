@@ -1,0 +1,281 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.navbar{
+    height: 50px;
+    display: flex;    
+    color: white;
+    border-color: black;
+	font-weight: bold;
+    justify-content: left;
+	font-size: 25px;
+	text-align: left;
+    background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(251,141,240,1) 92%);
+    font-weight: 700;
+
+}
+
+.logonav{
+    color:rgb(0, 0, 0) ;
+    font-size: 35px;
+}
+.encabezado{
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration-line: underline;
+    background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(141,251,148,1) 92%);
+
+}
+.titulo{
+    display: flex;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+    background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(141,251,148,1) 92%);
+    justify-content: center;
+   
+}
+.productos{
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.footer{
+    position: absolute;
+     width: 100%;
+     height: 80px;
+     bottom: 0;
+     background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(251,141,240,1) 92%);
+     margin: 25px 0 0 0;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     gap: 20px;
+     font-weight: 700;
+     color: black;
+ }
+ .footer a{ 
+     color: white;
+     font-weight: 500;
+     text-decoration: none;
+ }
+
+ @media screen and (max-width:768px){
+    .navbar{
+       display: flex;
+       font-size: 15px;
+       height: 30px;
+    }
+    .logonav{
+        font-size: 20px;
+    }
+    .encabezado{
+        font-size: 18px;
+        
+    }
+    .titulo{
+        font-size: 20px;
+        padding: 0;
+    }
+    .productos{
+        font-size: 18px;
+        padding: 80px;
+    }
+    .footer{
+        height: 40px;
+    }
+}
+.button{
+    border-style:inherit;
+    font-size: 15px;
+   
+}
+
+
+td{
+    text-align: center;
+    padding: 5px;
+
+}
+.container {
+    gap: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.button-delete {
+    background: darkred !important;
+}
+
+.button-small {
+    font-size: .8rem;
+    height: 2.8rem;
+    line-height: 2.8rem;
+    padding: 0 1.5rem;
+  }
+
+body {
+    padding: 20px;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 500;
+}
+
+p, span, strong, code {
+    font-size: larger;
+}
+
+em {
+    font-size: medium;
+}
+
+.container {
+    gap: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    box-shadow: 5px 20px 20px rgba(171, 28, 28, 0.3);
+    border: 1px solid rgba(211, 211, 211, 0.384);
+    border-radius: 8px;
+    height: 180px;
+    width: 150px;
+}
+
+.card:hover {
+    transition: .5s ease-in;
+    box-shadow: 5px 20px 60px rgba(211, 211, 211, 0.519);
+}
+
+.card .card-image {
+    text-align: center;
+    font-size: 60px;
+    display: block;
+    width: 1fr;
+}
+
+.card .card-name {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    display: block;
+    width: 1fr;
+}
+
+.card .card-price {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    display: block;
+    width: 1fr;
+}
+
+.card .card-button {
+    text-align: center;
+    display: block;
+}
+
+.button-add {
+    border-radius: 10px;
+    outline: 1px solid rgb(237, 69, 28) !important;
+}
+
+.card .card-button button {
+    margin-top: 10px;
+    font-size: 20px !important;
+}
+
+.card .card-button .disabled {
+    background-color: lightgray !important;
+    color: whitesmoke !important;
+}
+
+.card .card-button button:active {
+    background: darkmagenta !important;
+    color: white !important;
+}
+
+.sin-stock {
+    filter: grayscale(100%) opacity(30%);
+}
+
+.card-error {
+    box-shadow: 0px 6px 20px rgba(255, 0, 0, 0.147);
+    border: 1px solid darkred;
+    border-radius: 6px;
+    padding: 40px;
+    color: red;
+}
+
+.centrar-div {
+    text-align: center;
+}
+
+.text-red {
+    color: red;
+}
+
+.formulario {
+    padding: 40px;
+    display: flex;
+    border-radius: 10px;
+    background-color: rgba(90, 0, 139, 0.373);
+    box-shadow: 5px 10px 40px lightgray;
+}
+
+thead tr {
+    background-color: rgb(37, 18, 163);
+    color: white;
+}
+
+#tablehead {
+    padding: 10px;
+    
+}
+
+tbody tr:nth-child(even) {
+    background: rgba(173, 216, 230, 0.252) !important;
+}
+
+.centrar {
+    text-align: center;
+}
+
+#btnComprar:hover {
+    background-color: darkviolet;
+}
+
+#btnComprar:active {
+    background-color: black;
+}
+
+.h1-precios{
+    color: blue;
+    font-size: 18px;
+    display: flex;
+    justify-content: right;
+    padding: 60px;
+
+
+}
+
+.btnVolver {
+    padding: 40px;
+   
+}
+ 

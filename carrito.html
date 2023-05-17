@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="assets/css/styles1.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="icon" type="image/jpg" href="./assets/images/Favicon.jpeg"/>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/templates.js"></script>
+    <script defer src="js/nuevopedido.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        
+            <div class="navbar-nav">
+              <a class="logonav">MAYORISTA FOB</a>
+              <a href="index.html">Inicio</a>
+              <a href="nuevopedido.html">Nuevo pedido</a>
+              <a>Carrito</a>
+             
+              
+              
+            </div>
+        
+        
+      </nav>
+            <div  class="titulo">
+                <h3>Tu carrito de compras</h3>
+            </div> 
+              <section>
+            <table>
+                <thead class="tablaCarrito">
+                    <tr>
+                        <th id="tablehead">Producto</th>
+                        <th id="tablehead">Descripción</th>
+                        <th id="tablehead">Importe</th>
+                        <th id="tablehead">Quitar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                   
+                </tbody>
+            </table>
+        </section>
+
+        <div>
+            <p>TOTAL: <span id="importeTotal"></span></p>
+        </div>
+
+        <div class="">
+            <button id="confirmarCompra">CONFIRMAR</button>
+        </div>
+     
+       
+        <div class="btnVolver">
+         
+            <button href="nuevopedido.html">Seguir comprando</button>
+
+        </div>
+
+    
+    <footer class="footer">
+        <div><a href="#">Ayuda</a> </div>
+        <div><a href="#">FAQ'S</a> </div>
+    </footer>
+      
+</body>
+</html>

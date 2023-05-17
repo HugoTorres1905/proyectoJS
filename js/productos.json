@@ -1,0 +1,14 @@
+[ 
+    { "id": 1, "imagen": "⌚", "nombre": "Smartwatch Garmin", "precio": 15200 },
+    { "id": 2, "imagen": "⌚", "nombre": "Smartwatch Xiaomi", "precio": 11850 },
+    { "id": 3, "imagen": "⌨️", "nombre": "Teclado inalámbrico", "precio": 6200 },
+    { "id": 4, "imagen": "⌨️🎮", "nombre": "Teclado gamer con luz", "precio": 7700 },
+    { "id": 5, "imagen": "⌨️🌈", "nombre": "Teclado mecánico", "precio": 9900 },
+    { "id": 6, "imagen": "🖱️", "nombre": "Mouse óptico", "precio": 1910 },
+    { "id": 7, "imagen": "🎮", "nombre": "Mouse gamer", "precio": 3100 },
+    { "id": 8, "imagen": "🖱️", "nombre": "Mouse inalámbrico", "precio": 2650 },
+    { "id": 9, "imagen": "🔊", "nombre": "Airpods blancos", "precio": 9130 },
+    { "id": 10, "imagen": "🎧", "nombre": "Auricular con cable", "precio": 1800 },
+    { "id": 11, "imagen": "🎧🕹️", "nombre": "Auricular gamer con cable ", "precio": 290 },
+    { "id": 12, "imagen": "🎧🎮", "nombre": "Auricular gamer inalámbricos", "precio": 700 }
+]
